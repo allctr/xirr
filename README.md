@@ -3,6 +3,13 @@
 
 This is a gem to calculate XIRR on Bisection Method or Newton Method.
 
+## Allocator Fork
+
+Allocator only maintains and deploys branch: no_inline
+The reason for that is the inability to use rubyinline, which invokes C extension.
+
+While that will be incredibly useful, we are unable to compile it in modern architectures. Once we can, we'd revert to master
+
 ## Installation
 
 Add this line to your application's Gemfile:
